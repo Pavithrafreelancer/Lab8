@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+	int k,z,i,j,n;
+	printf("Enter dimension of the array");
+	scanf("%d",n);
+	int a[n];
+	k=1;
+	for(z=0;z<(n+1)/2;z++)
+	  {
+	  	for(j=z;j<n-z;j++)
+	     {
+	     i=z;
+	  	 a[i][j]=k;
+	     }
+	  	for(i=z+1;i<n-z;i++)
+	  	 {
+	  	 j=n-z;
+		 a[i][j]=k;
+	     }
+	  	for(j=n-1-z;j>z;j--)
+	  	{
+	  	 i=n-z;
+	  	 a[i][j]=k;
+	    }
+	  	for()
+	  	 a[i][j]=k;
+	  	k++;
+	  }
+	for(i=0;i<n;i++)
+	    for(j=0;j<n;j++)
+	     printf("%d",a[i][j]);
+	  	  return 0;
+}
